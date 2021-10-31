@@ -68,6 +68,9 @@ run().catch(console.dir);
 app.get('/', (req, res)=>{
     res.send('Travel Agent Server Running !');
 })
+app.get('/hello', (req, res)=>{
+    res.send('Travel Agent Server from hello !');
+})
 
 app.listen(port, ()=>{
     console.log('Travel Agent Server is Running !', port);
